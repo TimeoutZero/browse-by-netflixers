@@ -1,20 +1,31 @@
 import React, { Component } from 'react';
 import FFCategoryLink from './FFCategoryLink.js';
-
+import I18n from './i18n';
+import globalCategories from './categories';
 
 export default class FFBrowse extends Component {
 
   constructor(props){
     super(props);
-    this.search = null;
-    this.categories = [
-      { id: 1365 , name: 'category.actionAndAdventure' },
-      { id: 11828, name: 'category.foreignActionAndAdventure' }
-    ];
+
+    this.search     = null;
+    this.categories = [];
 
     this.state = {
-      categories : this.categories
+      categories : []
     };
+  }
+
+  componentWillMount(){
+    this.categories = globalCategories.map((category) => {
+      return {
+        id: category.id,
+        name: I18n.getMessage(category.name)
+      }
+    });
+
+    this.setState({ categories: this.categories });
+
   }
 
   render(){
@@ -42,10 +53,14 @@ export default class FFBrowse extends Component {
     });
   }
 
+  getFormattedMessage(messageKey){
+    return I18n.getMessage(messageKey);
+  }
+
   filterCategories(event){
-    var categories = null;
+    let categories = null;
     categories = this.categories.filter( category => {
-      return category.name.toLowerCase().indexOf(this.search.value.toLowerCase()) > -1;
+      return category.name.toLowerCase().indexOf(this.search.value.toLowerCase().trim()) > -1;
     });
     this.setState({ categories: categories });
   }

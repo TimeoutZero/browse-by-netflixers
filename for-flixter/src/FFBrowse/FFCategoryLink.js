@@ -11,11 +11,9 @@ export default class FFCategoryLink extends Component {
 
   render(){
     return (
-     <a href={'http://www.netflix.com/browse/genre/' + this.category.id}>
-      <FormattedMessage
-        id={this.category.name}
-      />
-     </a>
+      <a href={'http://www.netflix.com/browse/genre/' + this.category.id}>
+       {this.category.name}
+      </a>
     );
   }
 }
