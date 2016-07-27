@@ -60,7 +60,7 @@ export default class FFBrowse extends Component {
   filterCategories(event){
     let categories = null;
     categories = this.categories.filter( category => {
-      return category.name.toLowerCase().indexOf(this.search.value.toLowerCase().trim()) > -1;
+      return category.name && category.name.toLowerCase().indexOf(this.search.value.toLowerCase().trim()) > -1;
     });
     this.setState({ categories: categories });
   }
