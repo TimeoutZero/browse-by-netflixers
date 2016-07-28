@@ -422,7 +422,7 @@ const enUs = {
   'Werewolf Horror Movies' : 'Werewolf Horror Movies',
   'Westerns' : 'Westerns',
   'World Music Concerts' : 'World Music Concerts',
-  'Zombie Horror Movies' : 'Zombie Horror Movies',
+  'Zombie Horror Movies' : 'Zombie Horror Movies'
 };
 
 const messages = {
@@ -438,7 +438,7 @@ export default class I18n {
   static get locale(){ return locale }
 
   static discoverMessagesByLocale(){
-    currentMessages = messages['pt-br'];
+    currentMessages = messages[navigatorLocale.toLocaleLowerCase()];
 
     if(!currentMessages){
       locale          = 'en-US';
