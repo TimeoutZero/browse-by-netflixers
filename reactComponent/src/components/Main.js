@@ -4,8 +4,8 @@ require('styles/App.css');
 import React from 'react';
 import {IntlProvider} from 'react-intl';
 
-import FFBrowse from './FFBrowse/FFBrowse';
-import I18n from './FFBrowse/i18n';
+import CategoryBrowse from './CategoryBrowse/CategoryBrowse';
+import I18n from './CategoryBrowse/i18n';
 
 let messages = I18n.discoverMessagesByLocale();
 
@@ -16,7 +16,7 @@ class AppComponent extends React.Component {
         <IntlProvider
           locale={I18n.locale}
           messages={messages}>
-          <FFBrowse />
+          <CategoryBrowse />
         </IntlProvider>
       </div>
     );

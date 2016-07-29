@@ -1,0 +1,8 @@
+<rt-import name="CategoryPopup" from="./CategoryPopup.js"/>
+<div onMouseLeave="{() => this.changePopupVisibility(false)}">
+  <div className="ff-popup-trigger"
+    onMouseEnter="{() => this.changePopupVisibility(true)}">
+    popup trigger
+  </div>
+  <CategoryPopup.default rt-if="this.state.popupIsOpen" />
+</div>

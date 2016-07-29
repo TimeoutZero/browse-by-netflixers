@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 
-export default class FFCategoryLink extends Component {
+export default class CategoryLink extends Component {
 
   constructor(props){
     super(props);

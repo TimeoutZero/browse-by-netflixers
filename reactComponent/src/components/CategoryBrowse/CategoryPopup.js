@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
-import FFCategoryLink from './FFCategoryLink.js';
+import { Component } from 'react';
 import I18n from './i18n';
 import globalCategories from './categories';
-import template from './FFBrowse.template.rt';
+import template from './CategoryPopup.template.rt';
 
-export default class FFBrowse extends Component {
+export default class CategoryPopup extends Component {
 
   constructor(props){
     super(props);
