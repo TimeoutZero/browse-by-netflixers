@@ -1,4 +1,6 @@
 <rt-import name="CategoryLink" from="./CategoryLink.js"/>
+<rt-import name="ReactIntl" from="react-intl"/>
+
 
 <div className="ff-browse-popup">
   <div className="ff-search-wrapper">
@@ -15,5 +17,24 @@
         <CategoryLink.default category="{category}"/>
       </li>
     </ul>
+
+    <div className="ff-categories-footer">
+      <a className="ff-love-link"
+        href="https://github.com/TimeoutZero/browse-by-netflixters"
+        target="_blank">
+        <span>
+          <ReactIntl.FormattedMessage id='madeWith' />
+        </span>
+
+        <span class="love">
+          ♥
+        </span>
+
+        <span>
+          <ReactIntl.FormattedMessage id='byNetflixtersToNetflixters' />
+        </span>
+      </a>
+    </div>
+
   </div>
 </div>

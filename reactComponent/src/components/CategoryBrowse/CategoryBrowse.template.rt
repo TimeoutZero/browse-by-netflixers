@@ -12,5 +12,5 @@
     <span className="arrow-bar-caret"></span>
   </div>
 
-  <CategoryPopup.default rt-if="this.state.popupIsOpen"/>
+  <CategoryPopup.default />
 </div>
