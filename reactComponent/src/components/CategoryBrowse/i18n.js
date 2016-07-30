@@ -1,5 +1,10 @@
 
 const ptBr = {
+  searchPlaceholder: 'Procurar categorias',
+
+  // =====
+  // Categories
+  // =====
   'Action & Adventure' : "Ação & Aventura",
   'Action Comedies' : "Comédias de Ação",
   'Action Sci-Fi & Fantasy' : "Ação Sci-Fi & Fantasia",
@@ -213,6 +218,11 @@ const ptBr = {
 };
 
 const enUs = {
+  searchPlaceholder: 'Search categories',
+
+  // =====
+  // Categories
+  // =====
   'Action & Adventure' : 'Action & Adventure',
   'Action Comedies' : 'Action Comedies',
   'Action Sci-Fi & Fantasy' : 'Action Sci-Fi & Fantasy',

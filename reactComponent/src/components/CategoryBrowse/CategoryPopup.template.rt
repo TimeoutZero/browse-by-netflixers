@@ -1,13 +1,18 @@
-<div className="ff-browse">
+<rt-import name="CategoryLink" from="./CategoryLink.js"/>
+
+<div className="ff-browse-popup">
   <div className="ff-search-wrapper">
-    <input type="text" ref="{s => this.search = s}" onKeyUp="{this.filterCategories.bind(this)}"/>
+    <input
+      type="text"
+      placeholder="{this.searchPlaceholder}"
+      className="ff-search-input"
+      ref="{s => this.search = s}"
+      onKeyUp="{this.filterCategories.bind(this)}"/>
   </div>
   <div className="ff-categories-wrapper">
-    <ul>
+    <ul className="ff-categories">
       <li rt-repeat="category in this.state.categories" key="{category.id}">
-        <a href="{'http://www.netflix.com/browse/genre/' + category.id}">
-          {category.name}
-        </a>
+        <CategoryLink.default category="{category}"/>
       </li>
     </ul>
   </div>

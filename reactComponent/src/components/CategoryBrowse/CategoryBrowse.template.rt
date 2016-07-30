@@ -1,8 +1,11 @@
 <rt-import name="CategoryPopup" from="./CategoryPopup.js"/>
-<div onMouseLeave="{() => this.changePopupVisibility(false)}">
-  <div className="ff-popup-trigger"
+<div className="ff-browse" onMouseLeave="{() => this.changePopupVisibility(false)}">
+  <div className="ff-popup-trigger-wrapper"
     onMouseEnter="{() => this.changePopupVisibility(true)}">
-    popup trigger
+    <span className="ff-popup-trigger">
+      Netflixters
+      <span className="caret-trigger"></span>
+    </span>
   </div>
-  <CategoryPopup.default rt-if="this.state.popupIsOpen" />
+  <CategoryPopup.default rt-if="this.state.popupIsOpen"/>
 </div>

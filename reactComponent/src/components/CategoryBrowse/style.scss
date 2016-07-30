@@ -1,0 +1,97 @@
+.ff-browse {
+  width: 450px;
+  pointer-events: none;
+
+  .ff-popup-trigger-wrapper {
+    $popupTriggerColor: #E50914;
+    $caretPopupTriggerSize: 5px;
+    $popupTriggerHeight: 70px;
+
+    height: $popupTriggerHeight;
+    width: 100px;
+    pointer-events: all;
+
+    .ff-popup-trigger {
+      position: relative;
+      line-height: $popupTriggerHeight;
+
+      color: $popupTriggerColor;
+      font-weight: 400;
+
+      .caret-trigger {
+        display: inline-block;
+        vertical-align: middle;
+        width: 0;
+        height: 0;
+        border-left: $caretPopupTriggerSize solid transparent;
+        border-right: $caretPopupTriggerSize solid transparent;
+        border-top: $caretPopupTriggerSize solid $popupTriggerColor;
+      }
+
+    }
+
+  }
+
+  .ff-browse-popup {
+    $searchWrapperHeight: 30px;
+    $searchInpitBgColor: rgba(#141414,0.8);
+    pointer-events: all;
+
+    background: rgba(0,0,0,0.9);
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.15);
+    width: 100%;
+
+    .ff-search-wrapper {
+      height: $searchWrapperHeight;
+      height: 50px;
+      width: 100%;
+      position: relative;
+      background: $searchInpitBgColor;
+
+      .ff-search-input {
+        width: 100%;
+        height: 30px;
+        background: $searchInpitBgColor;
+        border: none;
+        padding: 10px 5px 10px 10px;
+        box-shadow: 0 0 1px 1px #000000;
+        color: #FFFFFF;
+        transition: background-color 0.3s ease-in-out;
+        outline: 0;
+
+        &:focus {
+          color: #000000;
+          background: #FFFFFF;
+        }
+      }
+    }
+
+    .ff-categories-wrapper{
+      width: 100%;
+      height: 250px;
+      overflow-y: auto;
+
+      .ff-categories {
+        list-style: circle;
+        color: #FFFFFF;
+        padding-left: 30px;
+      }
+    }
+
+    .ff-category-link {
+      color: #FFFFFF;
+      font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-size: 14px;
+      text-decoration: none;
+
+      &:hover {
+       text-decoration: underline;
+      }
+    }
+
+  }
+
+
+}
+

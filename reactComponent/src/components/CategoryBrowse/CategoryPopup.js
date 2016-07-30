@@ -10,6 +10,7 @@ export default class CategoryPopup extends Component {
 
     this.search     = null;
     this.categories = [];
+    this.searchPlaceholder = I18n.getMessage('searchPlaceholder');
 
     this.state = {
       categories : []

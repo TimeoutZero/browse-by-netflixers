@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import template from './CategoryBrowse.template.rt';
+import './style.scss';
 
 export default class CategoryBrowse extends Component {
 
