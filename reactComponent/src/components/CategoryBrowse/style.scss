@@ -130,6 +130,7 @@
 
         .ff-love-link {
           text-decoration: none;
+          transition: color 0.3s ease-in-out;
 
           &:visited {
             color: $lightBlack;
@@ -137,6 +138,7 @@
 
           &:hover {
             text-decoration: underline;
+            color: #FFFFFF;
           }
         }
 

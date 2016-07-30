@@ -20,6 +20,7 @@
 
     <div className="ff-categories-footer">
       <a className="ff-love-link"
+        title="TimeoutZero"
         href="https://github.com/TimeoutZero/browse-by-netflixters"
         target="_blank">
         <span>
