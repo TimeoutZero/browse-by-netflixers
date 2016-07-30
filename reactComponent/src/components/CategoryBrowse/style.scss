@@ -1,4 +1,7 @@
 .ff-browse {
+  $arrowBarBgColor: #e5e5e5;
+  $popupBorderSize: 4px;
+
   width: 450px;
   pointer-events: none;
 
@@ -10,6 +13,7 @@
     height: $popupTriggerHeight;
     width: 100px;
     pointer-events: all;
+    cursor: pointer;
 
     .ff-popup-trigger {
       position: relative;
@@ -18,7 +22,7 @@
       color: $popupTriggerColor;
       font-weight: 400;
 
-      .caret-trigger {
+      .trigger-caret {
         display: inline-block;
         vertical-align: middle;
         width: 0;
@@ -32,6 +36,30 @@
 
   }
 
+  .ff-netflix-arrow-bar {
+    $arrowBarCaretSize: 15px;
+    pointer-events: all;
+    width: 100%;
+    background: $arrowBarBgColor;
+    position: relative;
+    display: block;
+    height: 5px;
+    border: $popupBorderSize solid $arrowBarBgColor;
+
+    .arrow-bar-caret {
+      position: absolute;
+      top: -15px;
+      left: 20px;
+
+      width: 0;
+      height: 0;
+      border-left: $arrowBarCaretSize solid transparent;
+      border-right: $arrowBarCaretSize solid transparent;
+      border-bottom: $arrowBarCaretSize solid $arrowBarBgColor;
+    }
+
+  }
+
   .ff-browse-popup {
     $searchWrapperHeight: 30px;
     $searchInpitBgColor: rgba(#141414,0.8);
@@ -39,7 +67,8 @@
 
     background: rgba(0,0,0,0.9);
     overflow: hidden;
-    border: 1px solid rgba(255,255,255,.15);
+    border: 4px solid $arrowBarBgColor;
+    // border-top: 1px solid $arrowBarBgColor;
     width: 100%;
 
     .ff-search-wrapper {
@@ -55,7 +84,6 @@
         background: $searchInpitBgColor;
         border: none;
         padding: 10px 5px 10px 10px;
-        box-shadow: 0 0 1px 1px #000000;
         color: #FFFFFF;
         transition: background-color 0.3s ease-in-out;
         outline: 0;
@@ -71,6 +99,19 @@
       width: 100%;
       height: 250px;
       overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 1em;
+      }
+
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #000000;
+        outline: 0;
+      }
 
       .ff-categories {
         list-style: circle;

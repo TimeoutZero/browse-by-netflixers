@@ -4,8 +4,13 @@
     onMouseEnter="{() => this.changePopupVisibility(true)}">
     <span className="ff-popup-trigger">
       Netflixters
-      <span className="caret-trigger"></span>
+      <span className="trigger-caret"></span>
     </span>
   </div>
+
+  <div className="ff-netflix-arrow-bar" rt-if="this.state.popupIsOpen">
+    <span className="arrow-bar-caret"></span>
+  </div>
+
   <CategoryPopup.default rt-if="this.state.popupIsOpen"/>
 </div>
