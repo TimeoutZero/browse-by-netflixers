@@ -10,13 +10,11 @@ let messages = I18n.discoverMessagesByLocale();
 class AppComponent extends React.Component {
   render() {
     return (
-      <li>
-        <IntlProvider
-          locale={I18n.locale}
-          messages={messages}>
-          <CategoryBrowse />
-        </IntlProvider>
-      </li>
+      <IntlProvider
+        locale={I18n.locale}
+        messages={messages}>
+        <CategoryBrowse />
+      </IntlProvider>
     );
   }
 }

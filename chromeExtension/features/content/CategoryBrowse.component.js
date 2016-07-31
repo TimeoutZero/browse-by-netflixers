@@ -6446,7 +6446,7 @@
 	
 	// Add all locale data to `IntlMessageFormat`. This module will be ignored when
 	// bundling for the browser with Browserify/Webpack.
-	__webpack_require__(233);
+	__webpack_require__(234);
 	
 	// Re-export `IntlMessageFormat` as the CommonJS default exports with all the
 	// locale data registered, and with English set as the default locale. Define
@@ -23088,7 +23088,7 @@
 	  }
 	}.call(this));
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(232)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(233)(module)))
 
 /***/ },
 /* 71 */
@@ -23106,7 +23106,7 @@
 	
 	function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 	
-	var allLocaleData = _interopDefault(__webpack_require__(235));
+	var allLocaleData = _interopDefault(__webpack_require__(236));
 	var IntlMessageFormat = _interopDefault(__webpack_require__(68));
 	var IntlRelativeFormat = _interopDefault(__webpack_require__(157));
 	var React = __webpack_require__(15);
@@ -29383,15 +29383,11 @@
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          _reactIntl.IntlProvider,
-	          {
-	            locale: _i18n2.default.locale,
-	            messages: messages },
-	          _react2.default.createElement(_CategoryBrowse2.default, null)
-	        )
+	        _reactIntl.IntlProvider,
+	        {
+	          locale: _i18n2.default.locale,
+	          messages: messages },
+	        _react2.default.createElement(_CategoryBrowse2.default, null)
 	      );
 	    }
 	  }]);
@@ -29811,7 +29807,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".ff-browse {\n  width: 450px;\n  pointer-events: none;\n}\n\n.ff-browse .ff-popup-trigger-wrapper {\n  height: 70px;\n  width: 100px;\n  pointer-events: all;\n  cursor: pointer;\n}\n\n.ff-browse .ff-popup-trigger-wrapper .ff-popup-trigger {\n  position: relative;\n  line-height: 70px;\n  color: #E50914;\n  font-weight: 400;\n}\n\n.ff-browse .ff-popup-trigger-wrapper .ff-popup-trigger .trigger-caret {\n  display: inline-block;\n  vertical-align: middle;\n  width: 0;\n  height: 0;\n  border-left: 5px solid transparent;\n  border-right: 5px solid transparent;\n  border-top: 5px solid #E50914;\n}\n\n.ff-browse .ff-netflix-arrow-bar {\n  pointer-events: all;\n  width: 100%;\n  background: #e5e5e5;\n  position: relative;\n  display: block;\n  height: 5px;\n  border: 4px solid #e5e5e5;\n}\n\n.ff-browse .ff-netflix-arrow-bar .arrow-bar-caret {\n  position: absolute;\n  top: -15px;\n  left: 20px;\n  width: 0;\n  height: 0;\n  border-left: 15px solid transparent;\n  border-right: 15px solid transparent;\n  border-bottom: 15px solid #e5e5e5;\n}\n\n.ff-browse .ff-browse-popup {\n  pointer-events: all;\n  background: rgba(0, 0, 0, 0.9);\n  overflow: hidden;\n  border: 4px solid #e5e5e5;\n  width: 450px;\n}\n\n.ff-browse .ff-browse-popup .ff-search-wrapper {\n  height: 30px;\n  height: 50px;\n  width: 100%;\n  position: relative;\n  background: rgba(20, 20, 20, 0.8);\n}\n\n.ff-browse .ff-browse-popup .ff-search-wrapper .ff-search-input {\n  width: 100%;\n  height: 30px;\n  background: rgba(20, 20, 20, 0.8);\n  border: none;\n  padding: 10px 5px 10px 10px;\n  color: #FFFFFF;\n  transition: background-color 0.3s ease-in-out;\n  outline: 0;\n  font-size: 16px;\n}\n\n.ff-browse .ff-browse-popup .ff-search-wrapper .ff-search-input:focus {\n  color: #000000;\n  background: #FFFFFF;\n}\n\n.ff-browse .ff-browse-popup .ff-categories-wrapper {\n  width: 100%;\n  height: 250px;\n  overflow-y: auto;\n}\n\n.ff-browse .ff-browse-popup .ff-categories-wrapper::-webkit-scrollbar {\n  width: 1em;\n}\n\n.ff-browse .ff-browse-popup .ff-categories-wrapper::-webkit-scrollbar-track {\n  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n}\n\n.ff-browse .ff-browse-popup .ff-categories-wrapper::-webkit-scrollbar-thumb {\n  background-color: #3c3636;\n  outline: 0;\n}\n\n.ff-browse .ff-browse-popup .ff-categories-wrapper .ff-categories {\n  list-style: circle;\n  color: #FFFFFF;\n  padding-left: 30px;\n}\n\n.ff-browse .ff-browse-popup .ff-categories-wrapper .ff-categories .ff-category {\n  line-height: 18.4px;\n}\n\n.ff-browse .ff-browse-popup .ff-categories-wrapper .ff-categories-footer {\n  padding: 10px;\n  text-align: center;\n  font-size: 14px;\n  color: #3c3636;\n  letter-spacing: 1px;\n}\n\n.ff-browse .ff-browse-popup .ff-categories-wrapper .ff-categories-footer .ff-love-link {\n  text-decoration: none;\n  transition: color 0.3s ease-in-out;\n}\n\n.ff-browse .ff-browse-popup .ff-categories-wrapper .ff-categories-footer .ff-love-link:visited {\n  color: #3c3636;\n}\n\n.ff-browse .ff-browse-popup .ff-categories-wrapper .ff-categories-footer .ff-love-link:hover {\n  text-decoration: underline;\n  color: #FFFFFF;\n}\n\n.ff-browse .ff-browse-popup .ff-categories-wrapper .ff-categories-footer .love {\n  color: #E50914;\n  font-size: 8px;\n  vertical-align: middle;\n  -webkit-transform: scale(0.9);\n  -moz-transform: scale(0.9);\n  transform: scale(0.9);\n  display: inline-block;\n  margin: 0 5px;\n  -webkit-animation: love .5s infinite linear alternate-reverse;\n  -moz-animation: love .5s infinite linear alternate-reverse;\n  animation: love .5s infinite linear alternate-reverse;\n}\n\n.ff-browse .ff-browse-popup .ff-category-link {\n  color: #FFFFFF;\n  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;\n  font-size: 14px;\n  text-decoration: none;\n}\n\n.ff-browse .ff-browse-popup .ff-category-link:hover {\n  text-decoration: underline;\n}\n\n@-webkit-keyframes love {\n  to {\n    -webkit-transform: scale(1.2);\n  }\n}\n\n@-moz-keyframes love {\n  to {\n    -moz-transform: scale(1.2);\n  }\n}\n\n@keyframes love {\n  to {\n    transform: scale(1.2);\n  }\n}\n", ""]);
+	exports.push([module.id, ".ff-browse {\n  width: 450px;\n  pointer-events: none;\n}\n\n.ff-browse .ff-popup-trigger-wrapper {\n  height: 70px;\n  width: 100px;\n  pointer-events: all;\n  cursor: pointer;\n}\n\n.ff-browse .ff-popup-trigger-wrapper .ff-popup-trigger {\n  position: relative;\n  line-height: 70px;\n  color: #E50914;\n  font-weight: 400;\n}\n\n.ff-browse .ff-popup-trigger-wrapper .ff-popup-trigger .ff-popup-trigger-logo {\n  background: url(" + __webpack_require__(232) + ") no-repeat center center;\n  line-height: 70px;\n  height: 70px;\n  display: inline-block;\n  width: 40px;\n}\n\n.ff-browse .ff-popup-trigger-wrapper .ff-popup-trigger .trigger-caret {\n  display: inline-block;\n  vertical-align: middle;\n  width: 0;\n  height: 70px;\n  margin-left: 5px;\n  border-left: 5px solid transparent;\n  border-right: 5px solid transparent;\n  border-top: 5px solid #E50914;\n}\n\n.ff-browse .ff-netflix-arrow-bar {\n  pointer-events: all;\n  width: 100%;\n  background: #e5e5e5;\n  position: relative;\n  display: block;\n  height: 5px;\n  border: 4px solid #e5e5e5;\n}\n\n.ff-browse .ff-netflix-arrow-bar .arrow-bar-caret {\n  position: absolute;\n  top: -15px;\n  left: 10px;\n  width: 0;\n  height: 0;\n  border-left: 15px solid transparent;\n  border-right: 15px solid transparent;\n  border-bottom: 15px solid #e5e5e5;\n}\n\n.ff-browse .ff-browse-popup {\n  pointer-events: all;\n  background: rgba(0, 0, 0, 0.9);\n  overflow: hidden;\n  border: 4px solid #e5e5e5;\n  width: 450px;\n  position: absolute;\n}\n\n.ff-browse .ff-browse-popup .ff-search-wrapper {\n  height: 30px;\n  height: 50px;\n  width: 100%;\n  position: relative;\n  background: rgba(20, 20, 20, 0.8);\n  line-height: 30px;\n  font-weight: 800;\n}\n\n.ff-browse .ff-browse-popup .ff-search-wrapper .ff-search-input {\n  width: 100%;\n  height: 30px;\n  background: rgba(20, 20, 20, 0.8);\n  border: none;\n  padding: 10px 5px 10px 10px;\n  color: #FFFFFF;\n  transition: background-color 0.3s ease-in-out;\n  outline: 0;\n  font-size: 16px;\n}\n\n.ff-browse .ff-browse-popup .ff-search-wrapper .ff-search-input:focus {\n  color: #000000;\n  background: #FFFFFF;\n}\n\n.ff-browse .ff-browse-popup .ff-categories-wrapper {\n  width: 100%;\n  height: 250px;\n  overflow-y: auto;\n}\n\n.ff-browse .ff-browse-popup .ff-categories-wrapper::-webkit-scrollbar {\n  width: 1em;\n}\n\n.ff-browse .ff-browse-popup .ff-categories-wrapper::-webkit-scrollbar-track {\n  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n}\n\n.ff-browse .ff-browse-popup .ff-categories-wrapper::-webkit-scrollbar-thumb {\n  background-color: #3c3636;\n  outline: 0;\n}\n\n.ff-browse .ff-browse-popup .ff-categories-wrapper .ff-categories {\n  list-style: circle;\n  color: #FFFFFF;\n  padding-left: 30px;\n}\n\n.ff-browse .ff-browse-popup .ff-categories-wrapper .ff-categories .ff-category {\n  line-height: 18.4px;\n}\n\n.ff-browse .ff-browse-popup .ff-categories-wrapper .ff-categories-footer {\n  padding: 10px;\n  text-align: center;\n  font-size: 14px;\n  color: #3c3636;\n  letter-spacing: 1px;\n}\n\n.ff-browse .ff-browse-popup .ff-categories-wrapper .ff-categories-footer .ff-love-link {\n  text-decoration: none;\n  transition: color 0.3s ease-in-out;\n  font-weight: 800;\n}\n\n.ff-browse .ff-browse-popup .ff-categories-wrapper .ff-categories-footer .ff-love-link:visited {\n  color: #3c3636;\n}\n\n.ff-browse .ff-browse-popup .ff-categories-wrapper .ff-categories-footer .ff-love-link:hover {\n  text-decoration: underline;\n  color: #FFFFFF;\n}\n\n.ff-browse .ff-browse-popup .ff-categories-wrapper .ff-categories-footer .love {\n  color: #E50914;\n  font-size: 8px;\n  vertical-align: middle;\n  -webkit-transform: scale(0.9);\n  -moz-transform: scale(0.9);\n  transform: scale(0.9);\n  display: inline-block;\n  margin: 0 5px;\n  -webkit-animation: love .5s infinite linear alternate-reverse;\n  -moz-animation: love .5s infinite linear alternate-reverse;\n  animation: love .5s infinite linear alternate-reverse;\n}\n\n.ff-browse .ff-browse-popup .ff-category-link {\n  color: #FFFFFF;\n  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;\n  font-size: 14px;\n  text-decoration: none;\n  font-weight: 800;\n}\n\n.ff-browse .ff-browse-popup .ff-category-link:hover {\n  text-decoration: underline;\n}\n\n@-webkit-keyframes love {\n  to {\n    -webkit-transform: scale(1.2);\n  }\n}\n\n@-moz-keyframes love {\n  to {\n    -moz-transform: scale(1.2);\n  }\n}\n\n@keyframes love {\n  to {\n    transform: scale(1.2);\n  }\n}\n", ""]);
 	
 	// exports
 
@@ -32679,7 +32675,7 @@
 
 /***/ },
 /* 156 */
-[236, 153, 154],
+[237, 153, 154],
 /* 157 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -32691,7 +32687,7 @@
 	
 	// Add all locale data to `IntlRelativeFormat`. This module will be ignored when
 	// bundling for the browser with Browserify/Webpack.
-	__webpack_require__(234);
+	__webpack_require__(235);
 	
 	// Re-export `IntlRelativeFormat` as the CommonJS default exports with all the
 	// locale data registered, and with English set as the default locale. Define
@@ -33145,7 +33141,7 @@
 
 /***/ },
 /* 162 */
-[236, 158, 160],
+[237, 158, 160],
 /* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -33228,10 +33224,10 @@
 	        }, React.createElement('div', {
 	            'className': 'ff-popup-trigger-wrapper',
 	            'onMouseEnter': () => this.changePopupVisibility(true)
-	        }, React.createElement('span', { 'className': 'ff-popup-trigger' }, '\n      Netflixters\n      ', React.createElement('span', { 'className': 'trigger-caret' }))), this.state.popupIsOpen ? React.createElement('div', {
+	        }, React.createElement('span', { 'className': 'ff-popup-trigger' }, React.createElement('div', { 'className': 'ff-popup-trigger-logo' }), React.createElement('span', { 'className': 'trigger-caret' }))), this.state.popupIsOpen ? React.createElement('div', {
 	            'className': 'ff-netflix-arrow-bar',
-	            'key': '379'
-	        }, React.createElement('span', { 'className': 'arrow-bar-caret' })) : null, React.createElement(CategoryPopup.default, {}));
+	            'key': '413'
+	        }, React.createElement('span', { 'className': 'arrow-bar-caret' })) : null, this.state.popupIsOpen ? React.createElement(CategoryPopup.default, { 'key': '541' }) : null);
 	    };
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
@@ -33247,7 +33243,10 @@
 	], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, _, CategoryLink, ReactIntl) {
 	    'use strict';
 	    function repeatCategory1(category, categoryIndex) {
-	        return React.createElement('li', { 'key': category.id }, React.createElement(CategoryLink.default, { 'category': category }));
+	        return React.createElement('li', {
+	            'className': 'ff-category',
+	            'key': category.id
+	        }, React.createElement(CategoryLink.default, { 'category': category }));
 	    }
 	    return function () {
 	        return React.createElement('div', { 'className': 'ff-browse-popup' }, React.createElement('div', { 'className': 'ff-search-wrapper' }, React.createElement('input', {
@@ -42618,6 +42617,12 @@
 /* 232 */
 /***/ function(module, exports) {
 
+	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAiCAYAAADcbsCGAAAACXBIWXMAABcSAAAXEgFnn9JSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAzFJREFUeNrMWM9rE0EU3iwKHsQWEaxiMVAoeGpAUNCD8eJBKt3Sk6cm+gdYUNSD0OQmeMlFEAQb/wChBfWi0OhFEKQtCGpBSPwBPaik2oOnxu/Jt3UyzOzOJBvwwcdmN5m333zz5r03yXU6nUC3H+Mjw/vXN9q4RrgtAg3cLwYZGHzWcCnRr5i8q2H6bU4nh8EySIg0gQk+fgEHxYzIyQufApvARWANqMF/Xf9tqA2UGS0DQwqxtJflRWkPfreB0yQW8D01imImR7kXLA7bCS/LU2WVcIETNdlNTl63ZYxpkMc/cnxwxeJM5Lcqw3j5AB8VRf0Vkna1mOwZJRZ3lMs7DEyyVxKnIFZPUN/VJEwKf8nxw1Q/3qDeHC5CbDbIxg6rym1m4FBd+i1guwcfwuM+8ASizQm5SkazjQP5O6+fPMf/BF4C14CW5NaQOW0oA3J1Ot0NVFN2uG6/gA3gAn2IrWSmnFQUErwK3AIKjkM/SjEAxnl/lCjHymVli4wZWaI9Dr//DIwBe7XlFcKFkLMNFDlbfai3KqUOGAV+Oyg2qj3b4iY9IGER0mGVUrZ4da2TpuTcYMUIU4iNGVTcpoqyB+ZDJQ14EaOdMjxbYFK3pZKmgdgqVdynPCursxNiS54577oUfm1pW+w0kmqxGl+vDZunKl1KqDCfZl3zTSuRJa2k2TrwFThh+K60UyHYSzU8c1OXIwO5ZsKYR8BB4JilSkRdLRPzVKWHUjZhWNo2V8NkD4CZhBUqcZN27ygqGDEdxPbGIS1ElrRisksJfsrqcSC09GfysofAXeC4Q0I9n0ECL+utemgrRYDE0iRwD3iX4FTa+pNxD9ZjJzKdeoYwkJRYOmQJ3IDF+izzU8mRzJJGrGg72e1ycCab5IjluxHl8zlHclMaMVtsJiunBPYXlzrJc66LraURcyKXsvPEnimdRZQVMddlTbLHwJ2UaqFP1HnjhH2Sm9SC+23CedXbwoz8yFI950k++p/IVVmqZnj/zfPviYGRi9gszLIfnAcue+S8RMuZ/gLz/NdomGQk592Il9kn8Ae2rCx1cmZ979nPDV45TUVZ5oh1uW/7I8AAvwQTI+x/K48AAAAASUVORK5CYII="
+
+/***/ },
+/* 233 */
+/***/ function(module, exports) {
+
 	module.exports = function(module) {
 		if(!module.webpackPolyfill) {
 			module.deprecate = function() {};
@@ -42631,17 +42636,17 @@
 
 
 /***/ },
-/* 233 */
+/* 234 */
 /***/ function(module, exports) {
 
 	/* (ignored) */
 
 /***/ },
-/* 234 */
-233,
 /* 235 */
-233,
+234,
 /* 236 */
+234,
+/* 237 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	/* jslint esnext: true */

@@ -13,7 +13,7 @@
   </div>
   <div className="ff-categories-wrapper">
     <ul className="ff-categories">
-      <li rt-repeat="category in this.state.categories" key="{category.id}">
+      <li className="ff-category" rt-repeat="category in this.state.categories" key="{category.id}">
         <CategoryLink.default category="{category}"/>
       </li>
     </ul>

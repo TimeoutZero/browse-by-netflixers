@@ -9,7 +9,7 @@
   "version": "1.0",
 
   "page_action": {
-    "default_icon": "./assets/icons/Netflickers19.png",
+    "default_icon": "./images/icons/Netflickers19.png",
     "default_popup": "./features/popup/popup.html",
     "default_title": "Browse by netflixters"
   },
