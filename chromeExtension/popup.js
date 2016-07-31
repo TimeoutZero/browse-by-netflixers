@@ -5,14 +5,10 @@ function init() {
     var actualLanguage = window.navigator.language;
 
      var newLanguage = document.getElementById("change-language");
-     newLanguage.addEventListener('click', changeLanguage);
+     newLanguage.addEventListener('mouseup', changeLanguage);
 
      function changeLanguage() {
-         if(actualLanguage == "pt-BR"){
-             actualLanguage = "en-US";
-        }else{
-             actualLanguage = "pt-BR";
-         }
+         actualLanguage = newLanguage.value;         
     };
 
 };
