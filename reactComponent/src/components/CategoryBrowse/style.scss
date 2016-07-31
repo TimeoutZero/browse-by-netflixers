@@ -3,8 +3,9 @@
   $popupTriggerColor: #E50914;
   $popupBorderSize: 4px;
   $lightBlack: #3c3636;
+  $browseWidth: 450px;
 
-  width: 450px;
+  width: $browseWidth;
   pointer-events: none;
 
   .ff-popup-trigger-wrapper {
@@ -70,8 +71,7 @@
     background: rgba(0,0,0,0.9);
     overflow: hidden;
     border: 4px solid $arrowBarBgColor;
-    // border-top: 1px solid $arrowBarBgColor;
-    width: 100%;
+    width: $browseWidth;
 
     .ff-search-wrapper {
       height: $searchWrapperHeight;
@@ -89,6 +89,7 @@
         color: #FFFFFF;
         transition: background-color 0.3s ease-in-out;
         outline: 0;
+        font-size: 16px;
 
         &:focus {
           color: #000000;
@@ -119,6 +120,10 @@
         list-style: circle;
         color: #FFFFFF;
         padding-left: 30px;
+
+        .ff-category {
+          line-height: 18.4px;
+        }
       }
 
       .ff-categories-footer{

@@ -10,7 +10,7 @@ let defaultSettings = require('./defaults');
 let BowerWebpackPlugin = require('bower-webpack-plugin');
 
 let config = Object.assign({}, baseConfig, {
-  entry: path.join(__dirname, '../src/index'),
+  entry: path.join(__dirname, '../src/component.entry'),
   cache: false,
   devtool: 'sourcemap',
   plugins: [
@@ -28,6 +28,8 @@ let config = Object.assign({}, baseConfig, {
   ],
   module: defaultSettings.getDefaultModules()
 });
+
+config.output.filename = 'CategoryBrowse.component.js';
 
 // Add needed loaders to the defaults here
 config.module.loaders.push({
