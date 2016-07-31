@@ -1,22 +1,22 @@
 {
   "manifest_version": 2,
 
-   "name": "browse-by-netflixters",
-   "background": {
-    "scripts": ["background.js"]
+  "name": "browse-by-netflixters",
+  "background": {
+    "scripts": ["./features/backgroundRunners/netflixMatcher.js"]
   },
   "description": "This extension shows the hidden Netflix categories",
   "version": "1.0",
 
   "page_action": {
-    "default_icon": "./icons/Netflickers19.png",
-    "default_popup": "popup.html",
-    "default_title": "For-Flixter FTW"
+    "default_icon": "./assets/icons/Netflickers19.png",
+    "default_popup": "./features/popup/popup.html",
+    "default_title": "Browse by netflixters"
   },
   "content_scripts": [
     {
-      "matches": ["http://www.netflix.com/*"],
-      "js": ["popup.js"]
+      "matches": ["*://www.netflix.com/browse"],
+      "js": ["./features/content/app.js", "./features/content/init-browse-by-netflixters.js"]
     }
   ],
   "permissions": [
