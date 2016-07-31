@@ -1,3 +1,4 @@
+
 <rt-import name="CategoryPopup" from="./CategoryPopup.js"/>
 <div className="ff-browse" onMouseLeave="{() => this.changePopupVisibility(false)}">
   <div className="ff-popup-trigger-wrapper"
