@@ -15,8 +15,8 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://www.netflix.com/browse"],
-      "js": ["./features/content/CategoryBrowse.component.js", "./features/content/init-browse-by-netflixters.js"]
+      "matches": ["*://www.netflix.com/browse*"],
+      "js": ["./features/content/CategoryBrowse.component.js", "./features/content/logger.js"]
     }
   ],
   "permissions": [

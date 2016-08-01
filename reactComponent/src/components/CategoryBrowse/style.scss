@@ -4,8 +4,6 @@
   $popupBorderSize: 4px;
   $lightBlack: #3c3636;
   $browseWidth: 450px;
-
-  width: $browseWidth;
   pointer-events: none;
 
   .ff-popup-trigger-wrapper {
@@ -14,7 +12,7 @@
     $popupTriggerHeight: 70px;
 
     height: $popupTriggerHeight;
-    width: 100px;
+    width: 40px;
     pointer-events: all;
     cursor: pointer;
 
@@ -31,13 +29,12 @@
         height: 70px;
         display: inline-block;
         width: 40px;
+        vertical-align: middle;
       }
 
       .trigger-caret {
         display: inline-block;
-        vertical-align: middle;
         width: 0;
-        height: 70px;
         margin-left: 5px;
         border-left: $caretPopupTriggerSize solid transparent;
         border-right: $caretPopupTriggerSize solid transparent;
@@ -48,28 +45,17 @@
 
   }
 
-  .ff-netflix-arrow-bar {
+  .arrow-bar-caret {
     $arrowBarCaretSize: 15px;
     pointer-events: all;
-    width: 100%;
-    background: $arrowBarBgColor;
-    position: relative;
+    height: 18px;
     display: block;
-    height: 5px;
-    border: $popupBorderSize solid $arrowBarBgColor;
-
-    .arrow-bar-caret {
-      position: absolute;
-      top: -15px;
-      left: 10px;
-
-      width: 0;
-      height: 0;
-      border-left: $arrowBarCaretSize solid transparent;
-      border-right: $arrowBarCaretSize solid transparent;
-      border-bottom: $arrowBarCaretSize solid $arrowBarBgColor;
-    }
-
+    width: 0;
+    height: 0;
+    margin-left: 6px;
+    border-left: $arrowBarCaretSize solid transparent;
+    border-right: $arrowBarCaretSize solid transparent;
+    border-bottom: $arrowBarCaretSize solid $arrowBarBgColor;
   }
 
   .ff-browse-popup {
@@ -80,6 +66,7 @@
     background: rgba(0,0,0,0.9);
     overflow: hidden;
     border: 4px solid $arrowBarBgColor;
+    border-top: 14px solid $arrowBarBgColor;
     width: $browseWidth;
     position: absolute;
 
@@ -114,6 +101,7 @@
       width: 100%;
       height: 250px;
       overflow-y: auto;
+      margin-top: 10px;
 
       &::-webkit-scrollbar {
         width: 1em;

@@ -3,6 +3,7 @@
 
 
 <div className="ff-browse-popup">
+
   <div className="ff-search-wrapper">
     <input
       type="text"
@@ -11,6 +12,7 @@
       ref="{s => this.search = s}"
       onKeyUp="{this.filterCategories.bind(this)}"/>
   </div>
+
   <div className="ff-categories-wrapper">
     <ul className="ff-categories">
       <li className="ff-category" rt-repeat="category in this.state.categories" key="{category.id}">
