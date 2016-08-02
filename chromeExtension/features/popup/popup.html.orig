@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<<<<<<< HEAD
+    <link rel="stylesheet" type="text/css" href="popup.css">
+=======
+
+    <script type="text/javascript" src="popup.js"></script>
+>>>>>>> origin/master
+
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="logo-Wrapper">
+<<<<<<< HEAD
+        <div id="main-logo" class="love"></div>
+=======
+        <div id="logo">
+          <img src="./icons/Netflixers32.png"/>
+       </div>
+    <div id="menu-items">
+      <select name="change-language" id="change-language">
+        <option value="pt-BR">Português(Brazil)</option>
+        <option value="en-US">English(US)</option>
+      </select>
+    </div>
+>>>>>>> origin/master
+      </div>
+
+      <a class="love-link"
+        title="TimeoutZero"
+        href="https://github.com/TimeoutZero/browse-by-netflixers"
+        target="_blank">
+        <span>NETFLIXERS</span>
+      </a>
+    </div>
+  </body>
+</html>
