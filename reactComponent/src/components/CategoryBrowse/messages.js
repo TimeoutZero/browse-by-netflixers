@@ -2,7 +2,7 @@
 export const ptBr = {
   searchPlaceholder: 'Procurar categorias',
   madeWith: 'Feito com',
-  byNetflixtersToNetflixters: 'por netflixters para netflixters',
+  byNetflixersToNetflixers: 'por netflixers para netflixers',
 
   // =====
   // Categories
@@ -222,7 +222,7 @@ export const ptBr = {
 export const enUs = {
   searchPlaceholder: 'Search categories',
   madeWith: 'Made with',
-  byNetflixtersToNetflixters: 'by netflixters to netflixters',
+  byNetflixersToNetflixers: 'by netflixers to netflixers',
 
 
   // =====

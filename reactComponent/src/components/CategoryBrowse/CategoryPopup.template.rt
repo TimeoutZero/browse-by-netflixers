@@ -23,7 +23,7 @@
     <div className="ff-categories-footer">
       <a className="ff-love-link"
         title="TimeoutZero"
-        href="https://github.com/TimeoutZero/browse-by-netflixters"
+        href="https://github.com/TimeoutZero/browse-by-netflixers"
         target="_blank">
         <span>
           <ReactIntl.FormattedMessage id='madeWith' />
@@ -34,7 +34,7 @@
         </span>
 
         <span>
-          <ReactIntl.FormattedMessage id='byNetflixtersToNetflixters' />
+          <ReactIntl.FormattedMessage id='byNetflixersToNetflixers' />
         </span>
       </a>
     </div>

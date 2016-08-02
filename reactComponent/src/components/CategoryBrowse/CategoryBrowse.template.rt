@@ -3,7 +3,8 @@
 <div className="ff-browse" onMouseLeave="{() => this.changePopupVisibility(false)}">
 
   <div className="ff-popup-trigger-wrapper"
-    onMouseEnter="{() => this.changePopupVisibility(true)}">
+    onMouseEnter="{() => this.changePopupVisibility(true)}"
+    title="Netflixers">
     <span className="ff-popup-trigger">
       <div className="ff-popup-trigger-logo"></div>
       <span className="trigger-caret"></span>
