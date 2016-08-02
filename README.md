@@ -1,2 +1,1 @@
-# for-flixter
-Improves your experience on NETFLIX
+# browse-by-netflixers
