@@ -1,0 +1,54 @@
+body {
+  width: 240px;
+  height: 150px;
+}
+
+#main-logo {
+  background: url('../../images/icons/Netflickers32.png') no-repeat center center;
+  height: 110px;
+  width: 100%;
+  display: block;
+}
+
+.love {
+  -webkit-transition: love 0.3s ease-in-out;
+  -moz-transition: love  0.3s ease-in-out;
+  transition: love 0.3s ease-in-out;
+}
+
+.love:hover {
+  -webkit-transform: scale(.9);
+  -moz-transform: scale(.9);
+  transform: scale(.9);
+  display: inline-block;
+
+  -webkit-animation: love .5s infinite linear alternate-reverse;
+  -moz-animation: love .5s infinite linear alternate-reverse;
+  animation: love .5s infinite linear alternate-reverse;
+}
+
+.love-link {
+  text-align: center;
+  width: 100%;
+  display: block;
+  outline: 0;
+}
+
+
+@-webkit-keyframes love {
+  to {
+    -webkit-transform: scale(1.2);
+  }
+}
+
+@-moz-keyframes love {
+  to {
+    -moz-transform: scale(1.2);
+  }
+}
+
+@keyframes love {
+  to {
+    transform: scale(1.2);
+  }
+}
