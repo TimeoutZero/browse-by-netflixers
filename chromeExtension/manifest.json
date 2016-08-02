@@ -8,8 +8,14 @@
   "description": "This extension shows the hidden Netflix categories",
   "version": "1.0",
 
+  "icons": {
+    "19": "./images/icons/Netflixers19.png",
+    "32": "./images/icons/Netflixers32.png",
+    "128": "./images/icons/Netflixers128.png"
+  },
+
   "page_action": {
-    "default_icon": "./images/icons/Netflickers19.png",
+    "default_icon": "./images/icons/Netflixers19.png",
     "default_popup": "./features/popup/popup.html",
     "default_title": "Browse by netflixters"
   },
