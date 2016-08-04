@@ -1,12 +1,12 @@
 {
   "manifest_version": 2,
 
-  "name": "browse-by-netflixters",
+  "name": "browse-by-netflixers",
   "background": {
     "scripts": ["./features/backgroundRunners/netflixMatcher.js"]
   },
-  "description": "This extension shows the hidden Netflix categories",
-  "version": "1.0",
+  "description": "Mostra categorias secretas do NETFLIX // Displays secret NETFLIX's categories",
+  "version": "0.0.2",
 
   "icons": {
     "19": "./images/icons/Netflixers19.png",
