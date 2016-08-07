@@ -18,6 +18,7 @@ class AppComponent extends React.Component {
         <div className="hdSpace" role="header">
           <div id="hdPinTarget" className="akira-header head-opaque">
             <a className="logo icon-logoUpdate active" type="home" aria-label="Netflix" href="/browse">
+              NETFLIX
             </a>
 
             <ul role="navigation">
@@ -26,7 +27,7 @@ class AppComponent extends React.Component {
 
               <li className="browse active hasSubMenu">
                 <a role="button" aria-haspopup="true" tabIndex="0">
-                  <span>Navegar</span>
+                  <span>Browse</span>
                 </a>
                 <span className="caret" role="presentation"></span>
               </li>
@@ -37,15 +38,15 @@ class AppComponent extends React.Component {
             <div className="secondary-nav">
               <div className="nav-element">
                 <div className="searchBox">
-                  <button className="searchTab" tabIndex="0" aria-label="Buscar">
+                  <button className="searchTab" tabIndex="0" aria-label="Search">
                     <span className="icon-search"></span>
-                    <span className="label">Buscar</span>
+                    <span className="label">Search</span>
                   </button>
                 </div>
               </div>
               <div className="nav-element">
                 <span className="notifications">
-                  <span className="notifications-menu" aria-haspopup="true" aria-label="Notificações">
+                  <span className="notifications-menu" aria-haspopup="true" aria-label="Notifications" title="Notifications">
                     N
                   </span>
                 </span>

@@ -63,6 +63,11 @@
     }
   }
 
+  .arrow-bar-filler {
+    width: 200px;
+    pointer-events: all;
+  }
+
   .ff-browse-popup {
     $searchWrapperHeight: 30px;
     $searchInpitBgColor: rgba(#141414,0.8);

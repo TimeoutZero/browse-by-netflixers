@@ -5,23 +5,6 @@ body {
   padding: 20px;
 }
 
-// .akira-header {
-//   ul[role="navigation"]{
-//     list-style: none;
-
-//     > li {
-//       display: inline-block;
-//       padding: 0 25px;
-//       line-height: 70px;
-//       cursor: pointer;
-
-//       &:first-child {
-//         padding-left: 0;
-//       }
-//     }
-//   }
-// }
-
 .app-title {
   font-size: 10vw;
   text-align: center;
@@ -38,4 +21,8 @@ body {
 // ====
 .akira-header {
   position: relative;
+}
+
+.logo.icon-logoUpdate, .nav-element, .browse, .kids {
+  opacity: 0.6;
 }
