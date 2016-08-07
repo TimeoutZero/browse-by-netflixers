@@ -1,4 +1,8 @@
-/* Base Application Styles */
+
+
+// ====
+// General
+// ====
 body {
   color: #FFFFFF;
   background: #141414;
@@ -14,6 +18,10 @@ body {
   color: red;
 }
 
+
+// ====
+// NETFLIX
+// ====
 @import './fromNetflix';
 
 // ====
