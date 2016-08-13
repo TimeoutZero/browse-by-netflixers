@@ -22,7 +22,7 @@
   "content_scripts": [
     {
       "matches": ["*://www.netflix.com/browse*"],
-      "js": ["./features/content/CategoryBrowse.component.js", "./features/content/logger.js"]
+      "js": ["./features/content/CategoryBrowse.component.js"]
     }
   ],
   "permissions": [
