@@ -1,7 +1,7 @@
 # browse-by-netflixers
 ![Alt text](logo.png)
 
-`en-us`
+`en-us` | [pt-br](https://github.com/TimeoutZero/browse-by-netflixers/blob/master/README_pt-br.md)
 
 ## Description
 Netflix offers it's categories according to what the user watches. However, there are some secret categories which are not displayed in the navigation menu. This extension enables a new menu with all hidden categories! =)
