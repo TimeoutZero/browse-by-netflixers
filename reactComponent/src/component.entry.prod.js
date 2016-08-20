@@ -33,7 +33,7 @@ let renderTimeout = () => {
 };
 
 /**
- * @description Try to render app and schedules a retry application's wrapper is not available
+ * @description Try to render app and schedules a retry when application's wrapper is not available
  */
 let tryToRender = () => {
   discoverContainers();
