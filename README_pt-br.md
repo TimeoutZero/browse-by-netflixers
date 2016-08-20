@@ -1,3 +1,5 @@
+[![Stories in Ready](https://badge.waffle.io/TimeoutZero/browse-by-netflixers.png?label=ready&title=Ready)](https://waffle.io/TimeoutZero/browse-by-netflixers)
+[![Stories in progress](https://badge.waffle.io/TimeoutZero/browse-by-netflixers.png?label=in progress&title=In Progress)](https://waffle.io/TimeoutZero/browse-by-netflixers)
 
 # browse-by-netflixers
 ![Alt text](logo.png)
@@ -23,3 +25,10 @@ Após a instalação:
 
 ## Aviso Legal
 O NETFLIX é uma marca registrada e esta extensão é feita por fãs, não sendo oficial da marca.
+
+## Autores
+
+[![Carlos Henrique](https://avatars0.githubusercontent.com/u/2482989?v=3&s=96)](https://github.com/carloshpds) | [![Nicolas Felix](https://avatars3.githubusercontent.com/u/14082344?v=3&s=96)](https://github.com/nickFelix)
+--- | --- | --- | --- | --- | --- | ---
+[Carlos Henrique](https://github.com/carloshpds)| [Nicolas Felix](https://github.com/nickFelix)
+
