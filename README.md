@@ -22,3 +22,9 @@ After installation:
 
 ## Legal Warning
 NETFLIX is a registered company and this extension is made by fans, NETFLIX has nothing to do with it. =D
+
+## Authors
+
+[![Carlos Henrique](https://avatars0.githubusercontent.com/u/2482989?v=3&s=96)](https://github.com/carloshpds) | [![Nicolas Felix](https://avatars3.githubusercontent.com/u/14082344?v=3&s=96)](https://github.com/nickFelix)
+--- | --- | --- | --- | --- | --- | ---
+[Carlos Henrique](https://github.com/carloshpds)| [Nicolas Felix](https://github.com/nickFelix)
