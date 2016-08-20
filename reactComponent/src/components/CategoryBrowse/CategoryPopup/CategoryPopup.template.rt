@@ -13,6 +13,12 @@
       onKeyUp="{this.filterCategories.bind(this)}"/>
   </div>
 
+  <div className="ff-sort-wrapper">
+    <span className="sort-trigger" onClick="{this.sortCategories.bind(this)}">
+      Sort
+    </span>
+  </div>
+
   <div className="ff-categories-wrapper">
     <ul className="ff-categories">
       <li className="ff-category" rt-repeat="category in this.state.categories" key="{category.id}">
