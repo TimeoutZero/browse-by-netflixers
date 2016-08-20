@@ -1,4 +1,4 @@
-<rt-import name="CategoryLink" from="./CategoryLink.js"/>
+<rt-import name="CategoryLink" from="../CategoryLink/CategoryLink.js"/>
 <rt-import name="ReactIntl" from="react-intl"/>
 
 

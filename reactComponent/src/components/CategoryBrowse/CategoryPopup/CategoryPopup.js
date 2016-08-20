@@ -1,6 +1,6 @@
 import { Component } from 'react';
-import I18n from './i18n';
-import globalCategories from './categories';
+import I18n from '../../i18n/i18n';
+import globalCategories from '../Data/categories';
 import template from './CategoryPopup.template.rt';
 
 export default class CategoryPopup extends Component {

@@ -5,7 +5,7 @@ import React from 'react';
 import {IntlProvider} from 'react-intl';
 
 import CategoryBrowse from './CategoryBrowse/CategoryBrowse';
-import I18n from './CategoryBrowse/i18n';
+import I18n from './i18n/i18n';
 
 let messages = I18n.discoverMessagesByLocale();
 
