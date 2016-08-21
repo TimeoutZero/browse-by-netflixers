@@ -54,6 +54,21 @@ export default class CategoryPopup extends Component {
     return categories.reverse();
   }
 
+  _random(min, max){
+    if (max == null) {
+      max = min;
+      min = 0;
+    }
+
+    return min + Math.floor(Math.random() * (max - min + 1));
+  }
+
+  chooseRandomCategory(){
+    let category       = this.state.categories[this._random(0, this.state.categories.length)]
+    this.search.value  = category.name;
+    this.filterCategories();
+  }
+
 
 
   sortCategories(canToggle = true){
