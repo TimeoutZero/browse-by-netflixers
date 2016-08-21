@@ -1,0 +1,36 @@
+
+
+// ====
+// General
+// ====
+body {
+  color: #FFFFFF;
+  background: #141414;
+  padding: 20px;
+}
+
+.app-title {
+  font-size: 10vw;
+  text-align: center;
+}
+
+.profile-name {
+  color: red;
+}
+
+
+// ====
+// NETFLIX
+// ====
+@import './fromNetflix';
+
+// ====
+// NETFLIX Override
+// ====
+.akira-header {
+  position: relative;
+}
+
+.logo.icon-logoUpdate, .nav-element, .browse, .kids {
+  opacity: 0.6;
+}

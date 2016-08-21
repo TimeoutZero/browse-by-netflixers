@@ -1,18 +1,19 @@
 .ff-browse {
-  $arrowBarBgColor: #e5e5e5;
-  $popupTriggerColor: #E50914;
-  $popupBorderSize: 4px;
-  $lightBlack: #3c3636;
-  $browseWidth: 450px;
+  $arrowBarBgColor    : #e5e5e5;
+  $popupTriggerColor  : #E50914;
+  $popupBorderSize    : 4px;
+  $lightBlack         : #3c3636;
+  $browseWidth        : 450px;
+  $popupTriggerHeight : 70px;
+
   pointer-events: none;
+  height: $popupTriggerHeight;
 
   .ff-popup-trigger-wrapper {
 
     $caretPopupTriggerSize: 5px;
-    $popupTriggerHeight: 70px;
 
     height: $popupTriggerHeight;
-    width: 40px;
     pointer-events: all;
     cursor: pointer;
 
@@ -56,6 +57,15 @@
     border-left: $arrowBarCaretSize solid transparent;
     border-right: $arrowBarCaretSize solid transparent;
     border-bottom: $arrowBarCaretSize solid $arrowBarBgColor;
+
+    &:after {
+      width: 100px;
+    }
+  }
+
+  .arrow-bar-filler {
+    width: 200px;
+    pointer-events: all;
   }
 
   .ff-browse-popup {

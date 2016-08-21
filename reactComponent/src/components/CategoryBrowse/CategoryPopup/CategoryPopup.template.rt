@@ -1,4 +1,4 @@
-<rt-import name="CategoryLink" from="./CategoryLink.js"/>
+<rt-import name="CategoryLink" from="../CategoryLink/CategoryLink.js"/>
 <rt-import name="ReactIntl" from="react-intl"/>
 
 
@@ -11,6 +11,12 @@
       className="ff-search-input"
       ref="{s => this.search = s}"
       onKeyUp="{this.filterCategories.bind(this)}"/>
+  </div>
+
+  <div className="ff-sort-wrapper">
+    <span className="sort-trigger" onClick="{this.sortCategories.bind(this)}">
+      Sort
+    </span>
   </div>
 
   <div className="ff-categories-wrapper">

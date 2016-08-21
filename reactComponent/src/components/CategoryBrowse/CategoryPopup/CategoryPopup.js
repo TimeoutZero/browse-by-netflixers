@@ -1,6 +1,7 @@
 import { Component } from 'react';
-import I18n from './i18n';
-import globalCategories from './categories';
+import I18n from '../../i18n/i18n';
+import globalCategories from '../Data/categories';
+import sortStatus from '../sortStatus/sortStatus.const';
 import template from './CategoryPopup.template.rt';
 
 export default class CategoryPopup extends Component {
@@ -13,7 +14,8 @@ export default class CategoryPopup extends Component {
     this.searchPlaceholder = I18n.getMessage('searchPlaceholder');
 
     this.state = {
-      categories : []
+      categories : [],
+      sortStatus : null
     };
   }
 
@@ -25,8 +27,7 @@ export default class CategoryPopup extends Component {
       }
     });
 
-    this.setState({ categories: this.categories });
-
+    this.setState({ categories: this.categories }, this.sortCategories.bind(this));
   }
 
   render(){
@@ -41,6 +42,26 @@ export default class CategoryPopup extends Component {
       });
       this.setState({ categories: categories });
     }
+  }
+
+  sortCategories(){
+    let categories = null;
+    let status     = this.state.sortStatus ;
+
+    if(!this.state.sortStatus || this.state.sortStatus === sortStatus.REVERSE){
+      categories = this.categories.sort((category, nextCategory) => {
+        return category.name.toLowerCase().localeCompare(nextCategory.name.toLowerCase());
+      });
+
+      status = sortStatus.SORT;
+
+    } else {
+      categories = this.categories.reverse();
+      status = sortStatus.REVERSE;
+    }
+
+    this.setState({ categories: categories, sortStatus: status });
+
   }
 
 }
