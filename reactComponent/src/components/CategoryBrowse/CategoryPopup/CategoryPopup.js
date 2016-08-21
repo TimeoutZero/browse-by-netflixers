@@ -65,14 +65,16 @@ export default class CategoryPopup extends Component {
 
   chooseRandomCategory(){
     let category       = this.state.categories[this._random(0, this.state.categories.length)]
-    this.search.value  = category.name;
-    this.filterCategories();
+    if(category){
+      this.search.value  = category.name;
+      this.filterCategories();
+    }
   }
 
 
 
   sortCategories(canToggle = true){
-    let categories = this.state.categories;
+    let categories = this.state.categories || [];
     let status     = this.state.sortStatus;
 
     if(canToggle){
@@ -86,11 +88,11 @@ export default class CategoryPopup extends Component {
     } else {
 
       let sortMap = {
-        'sort'    : this._ascSortCategory,
+        'sort'    : this._ascSortCategories,
         'reverse' : this._descSortCategories
       };
 
-      sortMap[this.sortStatus] && sortMap[this.sortStatus]();
+      sortMap[status] && sortMap[status](categories);
     }
 
     this.setState({ categories: categories, sortStatus: status });
