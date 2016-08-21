@@ -1,9 +1,12 @@
 
 import React from 'react';
-import {IntlProvider} from 'react-intl';
+import {IntlProvider, addLocaleData} from 'react-intl';
 
 import CategoryBrowse from './CategoryBrowse/CategoryBrowse';
 import I18n from './CategoryBrowse/i18n';
+
+import ptLocaleData from 'react-intl/locale-data/pt';
+addLocaleData(ptLocaleData);
 
 let messages = I18n.discoverMessagesByLocale();
 
