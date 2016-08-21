@@ -1,5 +1,6 @@
 [![Stories in Ready](https://badge.waffle.io/TimeoutZero/browse-by-netflixers.png?label=ready&title=Ready)](https://waffle.io/TimeoutZero/browse-by-netflixers)
 [![Stories in progress](https://badge.waffle.io/TimeoutZero/browse-by-netflixers.png?label=in progress&title=In Progress)](https://waffle.io/TimeoutZero/browse-by-netflixers)
+[![Development done](https://badge.waffle.io/TimeoutZero/browse-by-netflixers.png?label=dev done&title=Next Release)](https://waffle.io/TimeoutZero/browse-by-netflixers)
 
 # browse-by-netflixers
 ![Alt text](logo.png)
