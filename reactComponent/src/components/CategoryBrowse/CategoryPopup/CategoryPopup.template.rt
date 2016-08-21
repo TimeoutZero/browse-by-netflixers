@@ -13,13 +13,21 @@
       onKeyUp="{this.filterCategories.bind(this)}"/>
   </div>
 
-  <div className="ff-sort-wrapper">
-    <span className="sort-trigger" onClick="{this.sortCategories.bind(this)}">
-      Sort
-    </span>
-  </div>
 
   <div className="ff-categories-wrapper">
+    <div className="ff-toolbar-wrapper">
+      <span className="sort-trigger">
+        <i
+          onClick="{this.sortCategories.bind(this)}"
+          class="fa ff-toolbar-item"
+          rt-class="{
+            'fa-sort-alpha-asc'  : this.state.sortStatus === 'sort',
+            'fa-sort-alpha-desc' : this.state.sortStatus === 'reverse'
+          }"
+          aria-hidden="true"></i>
+      </span>
+    </div>
+
     <ul className="ff-categories">
       <li className="ff-category" rt-repeat="category in this.state.categories" key="{category.id}">
         <CategoryLink.default category="{category}"/>
