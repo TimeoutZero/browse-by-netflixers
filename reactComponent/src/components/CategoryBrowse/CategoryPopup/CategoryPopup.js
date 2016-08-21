@@ -40,23 +40,23 @@ export default class CategoryPopup extends Component {
       categories = this.categories.filter( category => {
         return category.name && category.name.toLowerCase().indexOf(this.search.value.toLowerCase().trim()) > -1;
       });
-      this.setState({ categories: categories });
+      this.setState({ categories: categories }, this.sortCategories.bind(this));
     }
   }
 
   sortCategories(){
-    let categories = null;
-    let status     = this.state.sortStatus ;
+    let categories = this.state.categories;
+    let status     = this.state.sortStatus;
 
     if(!this.state.sortStatus || this.state.sortStatus === sortStatus.REVERSE){
-      categories = this.categories.sort((category, nextCategory) => {
+      categories = categories.sort((category, nextCategory) => {
         return category.name.toLowerCase().localeCompare(nextCategory.name.toLowerCase());
       });
 
       status = sortStatus.SORT;
 
     } else {
-      categories = this.categories.reverse();
+      categories = categories.reverse();
       status = sortStatus.REVERSE;
     }
 
