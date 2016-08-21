@@ -27,7 +27,7 @@ export default class CategoryPopup extends Component {
       }
     });
 
-    this.setState({ categories: this.categories }, this.sortCategories.bind(this));
+    this.setState({ categories: this.categories }, () => { this.sortCategories() });
   }
 
   render(){
@@ -40,28 +40,45 @@ export default class CategoryPopup extends Component {
       categories = this.categories.filter( category => {
         return category.name && category.name.toLowerCase().indexOf(this.search.value.toLowerCase().trim()) > -1;
       });
-      this.setState({ categories: categories }, this.sortCategories.bind(this));
+      this.setState({ categories: categories }, () => { this.sortCategories(false) });
     }
   }
 
-  sortCategories(){
+  _ascSortCategories(categories){
+    return categories.sort((category, nextCategory) => {
+      return category.name.toLowerCase().localeCompare(nextCategory.name.toLowerCase());
+    });
+  }
+
+  _descSortCategories(categories){
+    return categories.reverse();
+  }
+
+
+
+  sortCategories(canToggle = true){
     let categories = this.state.categories;
     let status     = this.state.sortStatus;
 
-    if(!this.state.sortStatus || this.state.sortStatus === sortStatus.REVERSE){
-      categories = categories.sort((category, nextCategory) => {
-        return category.name.toLowerCase().localeCompare(nextCategory.name.toLowerCase());
-      });
-
-      status = sortStatus.SORT;
-
+    if(canToggle){
+      if(!this.state.sortStatus || this.state.sortStatus === sortStatus.REVERSE){
+        categories = this._ascSortCategories(categories);
+        status = sortStatus.SORT;
+      } else {
+        categories = this._descSortCategories(categories);
+        status = sortStatus.REVERSE;
+      }
     } else {
-      categories = categories.reverse();
-      status = sortStatus.REVERSE;
+
+      let sortMap = {
+        'sort'    : this._ascSortCategory,
+        'reverse' : this._descSortCategories
+      };
+
+      sortMap[this.sortStatus] && sortMap[this.sortStatus]();
     }
 
     this.setState({ categories: categories, sortStatus: status });
-
   }
 
 }

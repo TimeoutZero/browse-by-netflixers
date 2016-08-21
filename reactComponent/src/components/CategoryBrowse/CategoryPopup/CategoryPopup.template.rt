@@ -18,7 +18,7 @@
     <div className="ff-toolbar-wrapper">
       <span className="sort-trigger">
         <i
-          onClick="{this.sortCategories.bind(this)}"
+          onClick="{ () => this.sortCategories() }"
           class="fa ff-toolbar-item"
           rt-class="{
             'fa-sort-alpha-asc'  : this.state.sortStatus === 'sort',
