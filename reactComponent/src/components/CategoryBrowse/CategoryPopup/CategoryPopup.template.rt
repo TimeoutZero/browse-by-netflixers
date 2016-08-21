@@ -11,6 +11,13 @@
       className="ff-search-input"
       ref="{s => this.search = s}"
       onKeyUp="{this.filterCategories.bind(this)}"/>
+      <span class="clear-trigger" rt-if="this.search && this.search.value.length > 0">
+        <i
+          class="fa fa-times ff-toolbar-item"
+          aria-hidden="true"
+          onClick="{ () => this.clearSearch() }"
+        ></i>
+      </span>
   </div>
 
 

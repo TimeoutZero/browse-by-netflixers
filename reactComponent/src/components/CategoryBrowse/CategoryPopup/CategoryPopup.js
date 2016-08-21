@@ -71,7 +71,10 @@ export default class CategoryPopup extends Component {
     }
   }
 
-
+  clearSearch(){
+    this.search.value = "";
+    this.filterCategories();
+  }
 
   sortCategories(canToggle = true){
     let categories = this.state.categories || [];
