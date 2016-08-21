@@ -92,12 +92,18 @@ $fa-font-path: '../fontAwesome';
       line-height: 30px;
       font-weight: 800;
 
+      .clear-trigger{
+        position: absolute;
+        line-height: 50px;
+        right: 20px;
+      }
+
       .ff-search-input {
         width: 100%;
         height: 30px;
         background: $searchInpitBgColor;
         border: none;
-        padding: 10px 5px 10px 10px;
+        padding: 10px 10px 10px 10px;
         color: #FFFFFF;
         transition: background-color 0.3s ease-in-out;
         outline: 0;
@@ -184,10 +190,10 @@ $fa-font-path: '../fontAwesome';
           font-weight: 800;
 
           &:visited {
-            color: $lightBlack;
+            color: #3C3636;
           }
 
-          &:hover {
+          &:link, &:hover, &:active {
             text-decoration: underline;
             color: #FFFFFF;
           }
