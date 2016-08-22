@@ -4,18 +4,22 @@
 
 <div className="ff-browse-popup">
 
-  <div className="ff-search-wrapper">
+  <div className="ff-search-wrapper" rt-class="{onFocus: this.state.searchIsOnFocus}">
     <input
       type="text"
       placeholder="{this.searchPlaceholder}"
       className="ff-search-input"
       ref="{s => this.search = s}"
+      onFocus="{ () => this.setState({searchIsOnFocus : true}) }"
+      onBlur="{ () => this.setState({searchIsOnFocus : false}) }"
       onKeyUp="{this.filterCategories.bind(this)}"/>
-      <span class="clear-trigger" rt-if="this.search && this.search.value.length > 0">
+      <span
+        rt-if="this.search && this.search.value.length > 0"
+        class="clear-trigger"
+        onClick="{ () => this.clearSearch() }" >
         <i
           class="fa fa-times ff-toolbar-item"
           aria-hidden="true"
-          onClick="{ () => this.clearSearch() }"
         ></i>
       </span>
   </div>

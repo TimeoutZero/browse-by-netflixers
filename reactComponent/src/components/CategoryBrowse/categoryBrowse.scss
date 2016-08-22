@@ -92,11 +92,6 @@ $fa-font-path: '../fontAwesome';
       line-height: 30px;
       font-weight: 800;
 
-      .clear-trigger{
-        position: absolute;
-        line-height: 50px;
-        right: 20px;
-      }
 
       .ff-search-input {
         width: 100%;
@@ -114,6 +109,31 @@ $fa-font-path: '../fontAwesome';
           background: #FFFFFF;
         }
       }
+
+      .clear-trigger{
+        position: absolute;
+        line-height: 50px;
+        right: 10px;
+        opacity: 0.5;
+        transition: opacity 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        &:active {
+          color: $popupTriggerColor;
+        }
+      }
+
+      &.onFocus {
+
+        .clear-trigger {
+          color: $lightBlack
+        }
+      }
+
     }
 
     .ff-categories-wrapper{

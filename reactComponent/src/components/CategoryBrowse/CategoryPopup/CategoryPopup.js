@@ -15,7 +15,8 @@ export default class CategoryPopup extends Component {
 
     this.state = {
       categories : [],
-      sortStatus : null
+      sortStatus : null,
+      searchIsOnFocus: false
     };
   }
 
