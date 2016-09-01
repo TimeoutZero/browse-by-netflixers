@@ -20,7 +20,7 @@ After installation:
 2 - Netflix may ask you to choose who's watching if you have multiple profiles in your account.
 
 3 - On the main page (www.netflix.com/browse) the new browse-by-netflixers logo must show up to left of the original browse icon and holding the new categories within.
-<b>If the logo doesn't show up immediately, just reload the page. The 2nd step might interrupt the extension's loading.</b>b>
+<b>If the logo doesn't show up immediately, just reload the page. The 2nd step might interrupt the extension's loading.</b>
 
 4 - Hover the mouse over the menu. All you gotta do now is look for any category you enjoy and click the link to open it. You can also filter the categories through the text box.
 
