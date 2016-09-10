@@ -30,5 +30,10 @@
     "activeTab",
     "declarativeContent",
     "https://ajax.googleapis.com/"
+  ],
+
+  "web_accessible_resources" : [
+    "assets/*"
   ]
+
 }

@@ -2,6 +2,7 @@
 import React from 'react';
 import {IntlProvider, addLocaleData} from 'react-intl';
 
+import './overridesPublicPath.js';
 import CategoryBrowse from './CategoryBrowse/CategoryBrowse';
 import I18n from './i18n/i18n';
 

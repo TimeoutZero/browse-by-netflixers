@@ -29,7 +29,8 @@ let config = Object.assign({}, baseConfig, {
   module: defaultSettings.getDefaultModules()
 });
 
-config.output.filename = 'CategoryBrowse.component.js';
+config.output.filename   = 'CategoryBrowse.component.js';
+config.output.publicPath = null;
 
 // Add needed loaders to the defaults here
 config.module.loaders.push({
