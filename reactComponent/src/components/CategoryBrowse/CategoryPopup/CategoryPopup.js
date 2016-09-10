@@ -24,7 +24,8 @@ export default class CategoryPopup extends Component {
     this.categories = globalCategories.map((category) => {
       return {
         id: category.id,
-        name: I18n.getMessage(category.name)
+        name: I18n.getMessage(category.name),
+        suppressGenrePrefix: category.suppressGenrePrefix
       }
     });
 

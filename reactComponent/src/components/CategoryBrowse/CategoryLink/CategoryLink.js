@@ -9,10 +9,11 @@ export default class CategoryLink extends Component {
   }
 
   render(){
+    let suffix = this.category.suppressGenrePrefix ? this.category.id : `genre/${this.category.id}`;
     return (
       <a
         className="ff-category-link"
-        href={'http://www.netflix.com/browse/genre/' + this.category.id}>
+        href={'http://www.netflix.com/browse/' + suffix}>
        {this.category.name}
       </a>
     );
