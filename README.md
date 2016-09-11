@@ -1,9 +1,11 @@
+
+![Logo](logo128.png)
+
 [![Stories in Ready](https://badge.waffle.io/TimeoutZero/browse-by-netflixers.png?label=ready&title=Sprint)](https://waffle.io/TimeoutZero/browse-by-netflixers)
 [![Stories in progress](https://badge.waffle.io/TimeoutZero/browse-by-netflixers.png?label=in progress&title=In Progress)](https://waffle.io/TimeoutZero/browse-by-netflixers)
 [![Development done](https://badge.waffle.io/TimeoutZero/browse-by-netflixers.png?label=dev done&title=Ready for the next release)](https://waffle.io/TimeoutZero/browse-by-netflixers)
 
 # browse-by-netflixers
-![Alt text](logo.png)
 
 `en-us` | [pt-br](https://github.com/TimeoutZero/browse-by-netflixers/blob/master/README_pt-br.md)
 
@@ -17,12 +19,10 @@ After installation:
 
 1 - go to NETFLIX website: (www.netflix.com)
 
-2 - Netflix may ask you to choose who's watching if you have multiple profiles in your account.
+2 - On the main page (www.netflix.com/browse) the new browse-by-netflixers logo must show up to left of the original browse icon and holding the new categories within.
+<b>If the logo doesn't show up immediately, just reload the page.</b>
 
-3 - On the main page (www.netflix.com/browse) the new browse-by-netflixers logo must show up to left of the original browse icon and holding the new categories within.
-<b>If the logo doesn't show up immediately, just reload the page. The 2nd step might interrupt the extension's loading.</b>
-
-4 - Hover the mouse over the menu. All you gotta do now is look for any category you enjoy and click the link to open it. You can also filter the categories through the text box.
+Note: Hover the mouse over the menu. All you gotta do now is look for any category you enjoy and click the link to open it. You can also filter the categories through the text box.
 
 ## Legal Warning
 NETFLIX is a registered company and this extension is made by fans, NETFLIX has nothing to do with it. =D
