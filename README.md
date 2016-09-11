@@ -3,7 +3,7 @@
 [![Development done](https://badge.waffle.io/TimeoutZero/browse-by-netflixers.png?label=dev done&title=Ready for the next release)](https://waffle.io/TimeoutZero/browse-by-netflixers)
 
 # browse-by-netflixers
-![Alt text](logo.png)
+![Logo](logo128.png)
 
 `en-us` | [pt-br](https://github.com/TimeoutZero/browse-by-netflixers/blob/master/README_pt-br.md)
 
