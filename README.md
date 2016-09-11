@@ -1,9 +1,11 @@
+
+![Logo](logo128.png)
+
 [![Stories in Ready](https://badge.waffle.io/TimeoutZero/browse-by-netflixers.png?label=ready&title=Sprint)](https://waffle.io/TimeoutZero/browse-by-netflixers)
 [![Stories in progress](https://badge.waffle.io/TimeoutZero/browse-by-netflixers.png?label=in progress&title=In Progress)](https://waffle.io/TimeoutZero/browse-by-netflixers)
 [![Development done](https://badge.waffle.io/TimeoutZero/browse-by-netflixers.png?label=dev done&title=Ready for the next release)](https://waffle.io/TimeoutZero/browse-by-netflixers)
 
 # browse-by-netflixers
-![Logo](logo128.png)
 
 `en-us` | [pt-br](https://github.com/TimeoutZero/browse-by-netflixers/blob/master/README_pt-br.md)
 
