@@ -1,3 +1,6 @@
+$fa-font-path: '../fontAwesome';
+@import '../fontAwesome/scss/font-awesome.scss';
+
 .ff-browse {
   $arrowBarBgColor    : #e5e5e5;
   $popupTriggerColor  : #E50914;
@@ -89,12 +92,13 @@
       line-height: 30px;
       font-weight: 800;
 
+
       .ff-search-input {
         width: 100%;
         height: 30px;
         background: $searchInpitBgColor;
         border: none;
-        padding: 10px 5px 10px 10px;
+        padding: 10px 10px 10px 10px;
         color: #FFFFFF;
         transition: background-color 0.3s ease-in-out;
         outline: 0;
@@ -105,6 +109,32 @@
           background: #FFFFFF;
         }
       }
+
+      .clear-trigger{
+        position: absolute;
+        line-height: 50px;
+        font-size: 20px;
+        right: 10px;
+        opacity: 0.5;
+        transition: opacity 0.2s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        &:active {
+          color: $popupTriggerColor;
+        }
+      }
+
+      &.onFocus {
+
+        .clear-trigger {
+          color: $lightBlack
+        }
+      }
+
     }
 
     .ff-categories-wrapper{
@@ -112,6 +142,8 @@
       height: 250px;
       overflow-y: auto;
       margin-top: 10px;
+      position: relative;
+      cursor: default;
 
       &::-webkit-scrollbar {
         width: 1em;
@@ -124,6 +156,36 @@
       &::-webkit-scrollbar-thumb {
         background-color: $lightBlack;
         outline: 0;
+      }
+
+
+      .ff-toolbar-wrapper {
+        padding: 0 5px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        width: 40px;
+        right: 0;
+        text-align: right;
+        color: #ffffff;
+        line-height: 30px;
+        font-size: 30px;
+
+        .ff-toolbar-item {
+          opacity: 0.5;
+          transition: opacity 0.2s ease-in-out;
+          margin: 10px 10px 0 0;
+          display: block;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 1;
+          }
+
+          &:active {
+            color: $popupTriggerColor;
+          }
+        }
       }
 
       .ff-categories {
@@ -149,10 +211,10 @@
           font-weight: 800;
 
           &:visited {
-            color: $lightBlack;
+            color: #3C3636;
           }
 
-          &:hover {
+          &:link, &:hover, &:active {
             text-decoration: underline;
             color: #FFFFFF;
           }

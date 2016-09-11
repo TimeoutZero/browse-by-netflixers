@@ -4,22 +4,44 @@
 
 <div className="ff-browse-popup">
 
-  <div className="ff-search-wrapper">
+  <div className="ff-search-wrapper" rt-class="{onFocus: this.state.searchIsOnFocus}">
     <input
       type="text"
       placeholder="{this.searchPlaceholder}"
       className="ff-search-input"
       ref="{s => this.search = s}"
+      onFocus="{ () => this.setState({searchIsOnFocus : true}) }"
+      onBlur="{ () => this.setState({searchIsOnFocus : false}) }"
       onKeyUp="{this.filterCategories.bind(this)}"/>
+      <span
+        rt-if="this.search && this.search.value.length > 0"
+        class="clear-trigger"
+        onClick="{ () => this.clearSearch() }" >
+        <i
+          class="fa fa-times ff-toolbar-item"
+          aria-hidden="true"
+        ></i>
+      </span>
   </div>
 
-  <div className="ff-sort-wrapper">
-    <span className="sort-trigger" onClick="{this.sortCategories.bind(this)}">
-      Sort
-    </span>
-  </div>
 
   <div className="ff-categories-wrapper">
+    <div className="ff-toolbar-wrapper" rt-if="this.state.categories.length >= 2">
+      <span className="sort-trigger">
+        <i
+          onClick="{ () => this.sortCategories() }"
+          class="fa ff-toolbar-item"
+          rt-class="{
+            'fa-sort-alpha-asc'  : this.state.sortStatus === 'sort',
+            'fa-sort-alpha-desc' : this.state.sortStatus === 'reverse'
+          }"
+          aria-hidden="true"></i>
+          <i class="fa fa-random ff-toolbar-item"
+            onClick="{ () => this.chooseRandomCategory() }"
+            aria-hidden="true"></i>
+      </span>
+    </div>
+
     <ul className="ff-categories">
       <li className="ff-category" rt-repeat="category in this.state.categories" key="{category.id}">
         <CategoryLink.default category="{category}"/>

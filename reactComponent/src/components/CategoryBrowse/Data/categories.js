@@ -209,7 +209,8 @@ const globalCategories = [
   { id: 75930, name: 'Werewolf Horror Movies' },
   { id: 7700, name: 'Westerns' },
   { id: 2856, name: 'World Music Concerts' },
-  { id: 75405, name: 'Zombie Horror Movies' }
+  { id: 75405, name: 'Zombie Horror Movies' },
+  { id: 'originals', name: 'Netflix Originals', suppressGenrePrefix: true }
 ];
 
 export let ptCategories = [
@@ -422,6 +423,7 @@ export let ptCategories = [
   { name : 'TV Mysteries' , id: 4366 },
   { name : 'TV Sci-Fi & Fantasy' , id: 1372 },
   { name : 'Viagens & Aventura em documentários' , id: 1159 },
-  { name : 'Westerns' , id: 7700 }
+  { name : 'Westerns' , id: 7700 },
+  { id: 'originals', name: 'Originais Netflix', suppressGenrePrefix: true}
 ]
 export default globalCategories;

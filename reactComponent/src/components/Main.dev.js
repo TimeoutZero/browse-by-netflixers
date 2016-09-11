@@ -2,11 +2,12 @@
 import './main.dev.scss';
 
 import React from 'react';
-import {IntlProvider} from 'react-intl';
-
+import {IntlProvider, addLocaleData} from 'react-intl';
+import ptLocaleData from 'react-intl/locale-data/pt';
 import CategoryBrowse from './CategoryBrowse/CategoryBrowse';
 import I18n from './i18n/i18n';
 
+addLocaleData(ptLocaleData);
 let messages = I18n.discoverMessagesByLocale();
 
 class AppComponent extends React.Component {

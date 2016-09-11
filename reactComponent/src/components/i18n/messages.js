@@ -216,7 +216,8 @@ export const ptBr = {
   'Werewolf Horror Movies' : "Filmes de terror de lobisomens",
   'Westerns' : "Westerns",
   'World Music Concerts' : "Shows de música",
-  'Zombie Horror Movies' : "Filmes de terror com zumbis"
+  'Zombie Horror Movies' : "Filmes de terror com zumbis",
+  'Netflix Originals'    : 'Netflix Originals'
 };
 
 export const enUs = {
@@ -437,5 +438,6 @@ export const enUs = {
   'Werewolf Horror Movies' : 'Werewolf Horror Movies',
   'Westerns' : 'Westerns',
   'World Music Concerts' : 'World Music Concerts',
-  'Zombie Horror Movies' : 'Zombie Horror Movies'
+  'Zombie Horror Movies' : 'Zombie Horror Movies',
+  'Netflix Originals'    : 'Originais Netflix'
 };
