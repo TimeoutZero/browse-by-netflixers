@@ -1,13 +1,10 @@
 {
-  "manifest_version": 2,
+  "manifest_version" : 2,
+  "name"             : "browse-by-netflixers",
+  "description"      : "__MSG_appDescription__",
+  "version"          : "0.3.0",
+  "default_locale"   : "en",
 
-  "name": "browse-by-netflixers",
-  "background": {
-    "scripts": ["./features/backgroundRunners/netflixMatcher.js"]
-  },
-  "description": "__MSG_appDescription__",
-  "version": "0.3.0",
-  "default_locale" : "en",
 
   "icons": {
     "19": "./images/icons/Netflixers19.png",
@@ -15,22 +12,29 @@
     "128": "./images/icons/Netflixers128.png"
   },
 
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "https://ajax.googleapis.com/"
+  ],
+
+  "background": {
+    "scripts": ["./features/backgroundRunners/netflixMatcher.js"]
+  },
+
   "page_action": {
     "default_icon": "./images/icons/Netflixers19.png",
     "default_popup": "./features/popup/popup.html",
     "default_title": "Browse by netflixters"
   },
+
   "content_scripts": [
     {
       "matches": ["*://www.netflix.com/browse*"],
       "js": ["./features/content/CategoryBrowse.component.js"]
     }
   ],
-  "permissions": [
-    "activeTab",
-    "declarativeContent",
-    "https://ajax.googleapis.com/"
-  ],
+
 
   "web_accessible_resources" : [
     "assets/*"
