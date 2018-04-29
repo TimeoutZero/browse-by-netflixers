@@ -16,7 +16,7 @@ let netflixNavList = null;
  * @description discovers NETFLIX's elements which will wrap the application
  */
 let discoverContainers = () => {
-  netflixNavList = document.querySelector(".akira-header ul[role='navigation']");
+  netflixNavList = document.querySelector(".tabbed-primary-navigation");
 };
 
 /**

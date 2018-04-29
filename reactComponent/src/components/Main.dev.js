@@ -16,13 +16,13 @@ class AppComponent extends React.Component {
       <div className="index">
         <h1 className="app-title">browse-by-netflixers</h1>
 
-        <div className="hdSpace" role="header">
+        <div className="hdSpace main-header has-billboard" role="header">
           <div id="hdPinTarget" className="akira-header head-opaque">
             <a className="logo icon-logoUpdate active" type="home" aria-label="Netflix" href="/browse">
               NETFLIX
             </a>
 
-            <ul role="navigation">
+            <ul role="navigation tabbed-primary-navigation">
 
               {this.getBrowseByNetflixers()}
 
